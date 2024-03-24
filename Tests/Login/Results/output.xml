@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-03-24T14:35:48.106053" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01" source="C:\Users\vinia\OneDrive\Área de Trabalho\Robot Framework\bank test\Tests\Login\TC01.robot">
+<test id="s1-t1" name="TC01 - Login:" line="5">
+<kw name="Dado que eu acesso o site" owner="Login_Steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-24T14:35:48.561862" level="INFO">Opening browser 'chrome' to base url 'https://demo.testfire.net/index.jsp'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-24T14:35:48.561862" elapsed="2.725463"/>
+</kw>
+<status status="PASS" start="2024-03-24T14:35:48.546230" elapsed="2.741095"/>
+</kw>
+<kw name="Quando clico em Sign In" owner="Login_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-24T14:35:51.287325" level="INFO">Clicking element '//*[@id="LoginLink"]/font'.</msg>
+<arg>${Login.signIn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T14:35:51.287325" elapsed="0.224512"/>
+</kw>
+<status status="PASS" start="2024-03-24T14:35:51.287325" elapsed="0.224512"/>
+</kw>
+<kw name="E digito os dados corretamente" owner="Login_Steps">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-24T14:35:51.513781" level="INFO">Typing text 'admin' into text field '//*[@id="uid"]'.</msg>
+<arg>${Login.userField}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T14:35:51.512852" elapsed="0.067357"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-24T14:35:51.580417" level="INFO">Typing text 'admin' into text field '//*[@id="passw"]'.</msg>
+<arg>${Login.passField}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T14:35:51.580417" elapsed="0.059832"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-24T14:35:51.640753" level="INFO">Clicking element '//*[@id="login"]/table/tbody/tr[3]/td[2]/input'.</msg>
+<arg>${Login.logButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T14:35:51.640753" elapsed="0.381559"/>
+</kw>
+<status status="PASS" start="2024-03-24T14:35:51.512852" elapsed="0.509460"/>
+</kw>
+<kw name="Então o Login é concluído" owner="Login_Steps">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-24T14:35:52.039568" level="INFO">Element '//*[@id="LoginLink"]/font' is displayed.</msg>
+<arg>${Login.signOff}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-24T14:35:52.022312" elapsed="0.017256"/>
+</kw>
+<status status="PASS" start="2024-03-24T14:35:52.022312" elapsed="0.017256"/>
+</kw>
+<status status="PASS" start="2024-03-24T14:35:48.546230" elapsed="3.497860"/>
+</test>
+<status status="PASS" start="2024-03-24T14:35:48.107570" elapsed="3.936520"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

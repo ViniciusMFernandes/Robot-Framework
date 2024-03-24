@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-03-24T17:24:31.157775" rpa="false" schemaversion="5">
+<suite id="s1" name="TC02" source="C:\Users\vinia\OneDrive\Área de Trabalho\Robot Framework\bank test\Tests\Feedback\TC02.robot">
+<test id="s1-t1" name="TC02 - Feedback:" line="5">
+<kw name="Dado que eu acesso o site" owner="Login_Steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-24T17:24:31.339044" level="INFO">Opening browser 'chrome' to base url 'https://demo.testfire.net/index.jsp'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-24T17:24:31.339044" elapsed="2.980769"/>
+</kw>
+<status status="PASS" start="2024-03-24T17:24:31.338047" elapsed="2.981766"/>
+</kw>
+<kw name="Quando clico em Feedback" owner="FeedBack_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-24T17:24:34.319813" level="INFO">Clicking element '//*[contains(text(),"Feedback")]'.</msg>
+<arg>${Feedback.feedBack}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T17:24:34.319813" elapsed="0.217663"/>
+</kw>
+<status status="PASS" start="2024-03-24T17:24:34.319813" elapsed="0.218676"/>
+</kw>
+<kw name="E digito todos os campos feedBack corretamente" owner="FeedBack_Steps">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-24T17:24:34.539495" level="INFO">Typing text 'admin@admin.com' into text field '//input[@name="email_addr"]'.</msg>
+<arg>${Feedback.emailFeedBack}</arg>
+<arg>${emailTextFeedBack}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T17:24:34.538489" elapsed="0.084075"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-24T17:24:34.622564" level="INFO">Typing text 'teste' into text field '//input[@name="subject"]'.</msg>
+<arg>${Feedback.subjectFeedBack}</arg>
+<arg>${subjectTextFeedBack}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T17:24:34.622564" elapsed="0.052762"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-24T17:24:34.675829" level="INFO">Typing text 'TesteTesteTesteTesteTesteTesteTesteTesteTesteTeste10' into text field '//textarea[@name="comments"]'.</msg>
+<arg>${Feedback.questionFeedBack}</arg>
+<arg>${questionTextFeedBack}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T17:24:34.675326" elapsed="0.091150"/>
+</kw>
+<status status="PASS" start="2024-03-24T17:24:34.538489" elapsed="0.227987"/>
+</kw>
+<kw name="E clico em Submit" owner="FeedBack_Steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-24T17:24:34.767711" level="INFO">Clicking element '//input[@name="submit"]'.</msg>
+<arg>${Feedback.submitFeedBack}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-24T17:24:34.766476" elapsed="0.217825"/>
+</kw>
+<status status="PASS" start="2024-03-24T17:24:34.766476" elapsed="0.217887"/>
+</kw>
+<kw name="Então Feedback é enviado" owner="FeedBack_Steps">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-24T17:24:36.984968" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-24T17:24:34.984562" elapsed="2.000406"/>
+</kw>
+<kw name="Element Text Should Be Thank You">
+<msg time="2024-03-24T17:24:36.990976" level="FAIL">No keyword with name 'Element Text Should Be Thank You' found. Did you try using keyword 'SeleniumLibrary.Element Text Should Be' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-03-24T17:24:36.990976" elapsed="0.000000">No keyword with name 'Element Text Should Be Thank You' found. Did you try using keyword 'SeleniumLibrary.Element Text Should Be' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-03-24T17:24:34.984562" elapsed="2.006414">No keyword with name 'Element Text Should Be Thank You' found. Did you try using keyword 'SeleniumLibrary.Element Text Should Be' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-03-24T17:24:31.337068" elapsed="5.653908">No keyword with name 'Element Text Should Be Thank You' found. Did you try using keyword 'SeleniumLibrary.Element Text Should Be' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-03-24T17:24:31.159135" elapsed="5.836316"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC02">TC02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
